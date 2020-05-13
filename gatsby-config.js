@@ -3,7 +3,8 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Techqueria Podcast`,
-    description: 'Sharing stories for ',
+    description: 'Sharing stories for and about latinx in Tech!',
+    siteUrl: `https://podcast.techqueria.org`,
     author: `@techqueria`,
   },
   plugins: [
@@ -17,6 +18,23 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-88917358-3",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        pageTransitionDelay: 0,
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        defer: false,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
