@@ -1,10 +1,14 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Techqueria Podcast`,
+    description: 'Sharing stories for and about latinx in Tech!',
+    siteUrl: `https://podcast.techqueria.org`,
+    author: `@techqueria`,
   },
   plugins: [
+    'gatsby-plugin-sass',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -14,19 +18,46 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-88917358-3",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        pageTransitionDelay: 0,
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        defer: false,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Techqueria Podcast`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#5a4640`,
+        theme_color: `#fabf67`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/techqueria.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, 'src/components'),
+          "@images": path.resolve(__dirname, 'src/images'),
+        },
+        extensions: []
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -1,7 +1,17 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
+const EpisodesData = require('./src/json/episodes.json');
 
-// You can delete this file if you're not using it
+// Creates the pages from the JSON, as found here:
+// https://dev.to/ashleemboyer/build-a-multi-page-gatsby-site-from-json-3kp
+exports.createPages = ({ actions }) => {
+    const { createPage } = actions;
+    const template = path.resolve('./src/templates/Episode.js');
+
+    EpisodesData.forEach((e) => {
+        createPage({
+            path: e.slug,
+            component: template,
+            context: e,
+        });
+    });
+};
