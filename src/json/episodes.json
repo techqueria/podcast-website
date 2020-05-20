@@ -1,7 +1,33 @@
 [
     {
-        "title": "Episode 1: *****",
-        "description": "Description",
-        "slug": "episode-1"
+        "title": "Coronavirus and the Latinx Community: A Young Doctor, a Green Power CEO, and a Cumbia Star Find Their Way",
+        "description": "Coronavirus and the Latinx Community: A Young Doctor, a Green Power CEO, and a Cumbia Star Find Their Way",
+        "id": 1,
+        "tags": ["covid19", "Cumbia"],
+        "slug": "episodes/1"
+    },
+    {
+        "title": "Coronavirus and the Latinx Community: Building Virus-Tracing Apps and Raising Children",
+        "description": "Coronavirus and the Latinx Community: Building Virus-Tracing Apps and Raising Children",
+        "id": 2,
+        "slug": "episodes/2"
+    },
+    {
+        "title": "Coronavirus and the Latinx Community: Family and Friends Remember the Passion and Life’s Work of the Dead",
+        "description": "Coronavirus and the Latinx Community: Family and Friends Remember the Passion and Life’s Work of the Dead",
+        "id": 3,
+        "slug": "episodes/3"
+    },
+    {
+        "title": "Young Software Engineers In Los Angeles and Chicago Look Back on Their Long Journeys to the Starting Line",
+        "description": "Young Software Engineers In Los Angeles and Chicago Look Back on Their Long Journeys to the Starting Line",
+        "id": 4,
+        "slug": "episodes/4"
+    },
+    {
+        "title": "Coronavirus and the Latinx Community: The Techqueria Community’s $50K Grant and Our Lives on the “Essential Services” Line",
+        "description": "Coronavirus and the Latinx Community: The Techqueria Community’s $50K Grant and Our Lives on the “Essential Services” Line",
+        "id": 5,
+        "slug": "episodes/5"
     }
 ]
