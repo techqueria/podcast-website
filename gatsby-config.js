@@ -36,6 +36,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/404`, '/about'],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -57,9 +64,8 @@ module.exports = {
         },
         extensions: []
       }
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    },
+    // TODO: maybe add guessJS to prefetch assets and increase performance
+    // https://www.gatsbyjs.org/packages/gatsby-plugin-guess-js
   ],
 }
