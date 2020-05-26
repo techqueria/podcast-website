@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "@techqueria/podcast-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A website for the techqueria podcast",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Techqueria Podcast <podcast@techqueria.org>",
   "dependencies": {
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
@@ -27,6 +27,9 @@
   "devDependencies": {
     "prettier": "2.0.4"
   },
+  "workspaces": [
+    "src/components/"
+  ],
   "keywords": [
     "gatsby"
   ],
@@ -42,9 +45,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/techqueria/podcast-website/"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/techqueria/podcast-website/issues"
   }
 }

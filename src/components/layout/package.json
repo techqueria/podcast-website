@@ -1,0 +1,7 @@
+{
+    "name": "@techqueria/layout",
+    "version": "0.9.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true
+}

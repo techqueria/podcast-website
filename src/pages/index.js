@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
+import Container from '../components/layout/container';
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const IndexPage = () => (
-  <Layout>
+  <Container>
     <SEO title="Techqueria Podcast: Home" />
     <h1>Techqueria Podcast!</h1>
     <p>
@@ -28,7 +28,7 @@ const IndexPage = () => (
       Latinx community. Get ready!
     </p>
     <p><Link to="/about">About</Link></p>
-  </Layout>
+  </Container>
 )
 
 export default IndexPage
