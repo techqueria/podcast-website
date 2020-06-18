@@ -1,5 +1,7 @@
 # Techqueria's Podcast website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92bdcd22-b71a-4c8f-9d3d-a1b675e575ee/deploy-status)](https://app.netlify.com/sites/laughing-fermi-c3d013/deploys)
+
 Techqueria and Points of Presence Media have come together to create a podcast featuring in-depth narrative stories, interviews and business advice about and from the perspective of the Latinx tech community. This website should serve as an introduction to the content, facilitate finding it, sharing, sponsoring and supporting the effort.
 
 
@@ -107,3 +109,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
+## Contributors
+
+- [David Silva](https://twitter.com/dvidsilva)

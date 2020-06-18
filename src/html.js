@@ -58,8 +58,7 @@ export default function HTML(props) {
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <script dangerouslySetInnerHTML={ieObjAssignPolyfill} />
-                <script src="/clientKeys.js" />
-                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@700&display=swap" rel="stylesheet" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
