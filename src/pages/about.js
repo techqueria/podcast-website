@@ -17,7 +17,6 @@ const AboutPage = () => (
 
     <h3>Points of Presence</h3>
     <p>Points of Presence Media is a news company focused on telling true stories of underrepresented people making, using, and living with technology. In a rush to understand the fast-paced, digital nature of the modern world, mainstream media has relied on transactional stories to the detriment of those that connect with regular people on a personal level. Points of Presence is changing that. A team of reporters, editors, technologists, and educators has come together to tell new stories through untraditional approaches. Find out more about them here.</p>
-
   </Layout>
 );
 
