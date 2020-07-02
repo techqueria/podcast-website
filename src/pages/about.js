@@ -1,11 +1,42 @@
 import React from 'react';
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import HeaderIllustration from '../images/illustrations/about.jpg';
 
 const AboutPage = () => (
   <Layout>
     <SEO title="Techqueria Podcast: About" />
-    <h1>Techqueria podcast</h1>
+    <div style={{
+        backgroundImage: `url(${HeaderIllustration})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: ' center center ',
+        width: '100%',
+        minHeight: '280px',
+        padding: '32px 16px',
+        position: 'relative',
+        marginBottom: '8px',
+    }}>
+        <h1 style={{
+            color: 'white',
+            textShadow: ` -4px -4px 0 #000,
+                4px -4px 0 #000,
+                -4px 4px 0 #000,
+                4px 4px 0 #000`,
+        }}>
+            Techqueria Podcast
+        </h1>
+        <p
+            style={{
+                position: 'absolute',
+                bottom: '0px',
+                right: '12px',
+                color: 'white',
+            }}
+            >Illustration by&nbsp;
+            <a href="https://www.instagram.com/joshuasagar666/" style={{ color: 'inherit'}} target="_blank" rel="norel nofollow">@joshuasagar666</a>
+        </p>
+    </div>
     <p>Techqueria and Points of Presence Media have come together to create a podcast featuring in-depth narrative stories, interviews and business advice about and from the perspective of the Latinx tech community. With a huge need to tell our stories properly and with necessary journalistic context, we are here to make a difference and a lot of noise in this growing medium!</p>
     <p><strong>The first episode of the Techqueria podcast is coming soon!</strong></p>
     <p>San Francisco Bay Area tech and culture reporter Jose Fermoso introduces the types of stories that will be featured on the show. Look for conversations and news context on socioeconomic displacement, immigration policies and multigenerational tech and business startups, as well as the latest on the effect of the coronavirus pandemic on the Latinx community. Get ready!</p>
